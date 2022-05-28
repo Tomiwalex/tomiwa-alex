@@ -1,0 +1,49 @@
+.swiper{
+    text-align: center;
+    
+
+    h3, h2{
+        color: $DarkBlue;
+    }
+}
+.swiper-wrapper{
+    margin-top: 100px;
+    
+
+    img{
+        transform: translateY(-50%);
+        height: 84px;
+        width: 84px;
+    }
+}
+
+.swiper-slide{
+    max-width: 100%;
+    min-height: 280px;
+    text-align: center;
+    background-color: $VeryLightGray;
+
+    p{
+        color: $DarkGrayishBlue;
+        font-weight: $sml;
+        font-size: 16px;
+        margin: 0 10px;
+        line-height: 1.6;
+        align-self: center;
+    }
+}
+
+.orng{
+    max-width: 1113px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+.swiper-pagination{
+    position: unset !important;
+    margin-top: 20px !important;
+    &-bullet-active {
+    background: $BrightRed !important;
+    }
+}

@@ -1,0 +1,146 @@
+footer{
+    background-color: $VeryDarkBlue;
+
+    .footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+        flex-wrap: wrap;
+
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-areas: "logo ref1 ref2 form"
+            "icons ref1 ref2 cpy";
+        }
+
+        .form{
+            flex-basis: 100%;
+            margin: 30px auto;
+            text-align: center;
+            grid-area: form;
+
+            input{
+                border: none;
+                padding: 10px 22px;
+                border-radius: 30px;
+                margin: 0 auto;
+            }
+
+            .orng-btn{
+                box-shadow: none;
+            }
+        }
+
+        .ref1{     
+            flex-basis: 50%;
+            justify-self: center; 
+            grid-area: ref1;
+            text-align: center;
+            @include breakpoint-up(large){
+                margin-top: 30px;
+            }
+            li{
+                list-style-type: none;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: $sml;
+                font-size: 16px;
+                line-height: 2;
+                transition: all 300ms ease-in-out;
+                
+
+                &:hover{
+                    color: $BrightRed;
+                }
+            }
+        }
+
+        .ref2{    
+            flex-basis: 50%;
+            grid-area: ref2;
+            justify-self: center;
+            text-align: center;
+
+            @include breakpoint-up(large){
+                margin-top: 30px;
+            }
+            
+            li{
+                list-style-type: none;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 2;
+                transition: all 300ms ease-in-out;
+
+                &:hover{
+                    color: $BrightRed;
+                }
+            }
+        }
+
+        .icons{
+            flex-basis: 100%;
+            margin-top: 30px;
+            display: flex;
+            grid-area: icons;
+
+            @include breakpoint-up(large){
+               justify-content: space-between;
+            }
+            a{
+                display: inline;
+                margin: 0 auto;
+                width: 30px;
+
+                svg path{
+                    transition: all 300ms ease-in-out;
+                }
+                
+                &:hover svg path{
+                    fill: $BrightRed;
+                }
+
+                @include breakpoint-up(large){
+                    width: 25px;
+                    height: 25px;
+
+                    :not(:last-child){
+                        margin-left: 0;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+
+        .logo{
+            flex-basis: 100%;
+            text-align: center;
+            margin-top: 30px;
+            grid-area: logo;
+
+            @include breakpoint-up(large){
+                text-align: left;
+            }
+
+        }
+
+        .copy{
+
+            grid-area: cpy;
+            margin: 30px auto;
+            text-align: center;
+            color: $VeryPaleRed;
+            font-weight: 300;
+            font-size: small;
+            opacity: 0.7;
+        }
+    }
+}

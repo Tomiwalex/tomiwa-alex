@@ -1,0 +1,76 @@
+.heros{
+    .container{
+        margin-top: 70px;
+        
+        .hero{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+
+            .patt{
+                position: absolute;
+                z-index: -1;
+                right: -162px;
+                top: 512px;
+                width: 76%;
+
+                @include breakpoint-up(medium){
+                    display: none;
+                }
+            }
+        
+            .text{
+                flex: 1 1 100%;
+                text-align: center;
+        
+                h1{
+                    
+                    font-weight: $lg;                  
+                    color: $DarkBlue;
+                    font-size: 33px;
+                     width: 100%;
+
+                    @include breakpoint-up(large){
+                        width: 85%;
+                        font-size: 48px;
+                        width: 90%;
+                        font-weight: $lg;
+                        
+                    }
+                }
+                p{
+                    color: $DarkGrayishBlue;
+                    line-height:2 ;
+                    width: 100%;
+                    font-weight: $sml;
+                    margin-bottom: 40px;
+
+                    @include breakpoint-up(large){
+                        width: 80%;
+
+                    }
+                }
+
+                @include breakpoint-up(medium){
+                    flex-basis:50%;
+                    text-align: left;
+                }
+            }
+        
+            .img{
+                flex-basis:100%;
+        
+                img{
+                    width: 95%;
+                }
+                
+                @include breakpoint-up(medium){
+                    flex-basis:50%;
+                }
+            }
+            
+        
+        }
+    }
+}

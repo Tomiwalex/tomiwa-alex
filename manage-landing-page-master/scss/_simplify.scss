@@ -1,0 +1,56 @@
+.simp{
+    background-color: #F3613C;
+
+}
+
+.simplify{
+    color: $VeryLightGray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+
+    @include breakpoint-up(medium){
+        padding: 10px 0;
+    }
+
+    .text{
+        text-align: center;
+        flex-basis: 100%;
+
+        h1{
+            font-size: 30px;
+            font-weight: 300;
+            margin-left:auto;
+            margin-right:auto;
+            width: 85%;
+
+            @include breakpoint-up(medium){
+                width: 100%;
+                font-size: 40px;
+            }
+        }
+
+        @include breakpoint-up(medium){
+            text-align: left;
+            flex-basis: 50%;
+        }
+    }
+    .cli{
+        text-align: center;
+        flex-basis: 100%;
+
+        @include breakpoint-up(medium){
+            text-align: right;
+            flex-basis: 50%;
+        }
+
+        .orng-btn{
+            background-color: $VeryLightGray;
+            color: $BrightRed;
+            
+        }
+    }
+
+}

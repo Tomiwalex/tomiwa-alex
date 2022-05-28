@@ -1,0 +1,47 @@
+body{
+    font-family: 'Be Vietnam pro';
+    margin: 0;
+
+    .body{
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+
+}
+.swiper-pagination-bullet-active {
+    background: $BrightRed;
+}
+
+.container{
+    max-width: 1113px;
+    padding: 0 31px;
+    margin: 0 auto;
+}
+
+.orng-btn{
+    color: $VeryLightGray;
+    text-decoration: none;
+    background-color: $BrightRed;
+    padding: 13px 26px;
+    border-radius: 30px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(243, 97, 60, 0.80);
+    transition: all 300ms ease-in-out;
+    font-weight: $sml;
+
+    &:hover{
+        background-color: rgb(249, 143, 117);
+        color: $VeryLightGray;
+    }
+}
